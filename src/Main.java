@@ -10,15 +10,17 @@ public class Main {
         List<Integer> a = List.of(1,2,3,4,5,6);
         List<Integer> b = List.of();
 
+        Calculator cal = new Calculator();
+
         try {
-            Calculator cal = new Calculator(b);
+            cal.sum(a);
         }
         catch (NullException ne){
             System.out.println(ne.getMessage());
         }
 
         try{
-            Calculator cal1 = new Calculator(a);
+            cal.sum(b);
         }
         catch (NullException ne){
             System.out.println(ne.getMessage());
