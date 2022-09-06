@@ -28,8 +28,11 @@ public class Main {
 
         String x = "A String in Java is actually an object, which contain methods that can perform certain operations on strings. For example, the length of a string can be found with the length() method:";
 
-        for (int i=x.length()-1;i>=0;i--){
-            System.out.print(x.charAt(i));
+        String[] arr = x.split(" ");
+
+        for (int i=arr.length-1;i>=0;i--){
+            System.out.print(arr[i]);
+            System.out.print(" ");
         }
 
 
